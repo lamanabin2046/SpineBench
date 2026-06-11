@@ -1,0 +1,30 @@
+================================================================================
+E3a: Localization-Aware Contrastive Learning
+Positive pair = same disease AND same spinal level pattern
+================================================================================
+Device: cuda
+
+Loading datasets...
+Train samples: 49,617
+Val samples:   12,409
+Test samples:  2,128
+
+Class counts:
+  Subarticular Stenosis              :  10914 | weight=0.017
+  Foraminal stenosis                 :   6774 | weight=0.028
+  Healthy                            :   4216 | weight=0.045
+  Osteophytes                        :   3144 | weight=0.060
+  Spinal Canal Stenosis              :   1938 | weight=0.097
+  cervical Lordosis                  :   1276 | weight=0.147
+  Straight cervical vertebrae        :   1230 | weight=0.153
+  sigmoid cervical vertebrae         :    692 | weight=0.272
+  cervical Kyphosis                  :    309 | weight=0.609
+  Disc space narrowing               :    148 | weight=1.271
+  Spondylolisthesis                  :     62 | weight=3.033
+  Vertebral collapse                 :     30 | weight=6.269
+
+Training...
+================================================================================
+Epoch |     Loss |     Task |      Con | TrainCls |   ValCls |   ValLoc | ValOverall | Save
+--------------------------------------------------------------------------------
+slurmstepd-skynet: error: *** JOB 15876 ON skynet CANCELLED AT 2026-06-10T07:39:59 ***

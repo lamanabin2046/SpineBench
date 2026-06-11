@@ -1,0 +1,3 @@
+/var/spool/slurmd/job15786/slurm_script: line 12: /home/dsia-st125985/.conda/etc/profile.d/conda.sh: No such file or directory
+/var/spool/slurmd/job15786/slurm_script: line 13: conda: command not found
+slurmstepd-lunar: error: *** JOB 15786 ON lunar CANCELLED AT 2026-06-08T22:40:01 ***

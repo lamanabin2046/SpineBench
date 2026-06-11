@@ -1,0 +1,28 @@
+The tokenizer class you load from this checkpoint is not the same type as the class this function is called from. It may result in unexpected tokenization. 
+The tokenizer class you load from this checkpoint is 'GemmaTokenizer'. 
+The class this function is called from is 'SiglipTokenizer'.
+================================================================================
+E3a: Localization-Aware Contrastive Learning
+Positive pair = same disease AND same spinal level pattern
+================================================================================
+Device: cuda
+Traceback (most recent call last):
+  File "/home/dsia-st125985/SpineVQA/scripts/E3a_newsplit.py", line 802, in <module>
+    main()
+  File "/home/dsia-st125985/SpineVQA/scripts/E3a_newsplit.py", line 658, in main
+    processor = AutoProcessor.from_pretrained(cfg.VISION_MODEL)
+  File "/home/dsia-st125985/.conda/envs/spinevqa/lib/python3.10/site-packages/transformers/models/auto/processing_auto.py", line 326, in from_pretrained
+    return processor_class.from_pretrained(
+  File "/home/dsia-st125985/.conda/envs/spinevqa/lib/python3.10/site-packages/transformers/processing_utils.py", line 915, in from_pretrained
+    args = cls._get_arguments_from_pretrained(pretrained_model_name_or_path, **kwargs)
+  File "/home/dsia-st125985/.conda/envs/spinevqa/lib/python3.10/site-packages/transformers/processing_utils.py", line 961, in _get_arguments_from_pretrained
+    args.append(attribute_class.from_pretrained(pretrained_model_name_or_path, **kwargs))
+  File "/home/dsia-st125985/.conda/envs/spinevqa/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 2216, in from_pretrained
+    return cls._from_pretrained(
+  File "/home/dsia-st125985/.conda/envs/spinevqa/lib/python3.10/site-packages/transformers/tokenization_utils_base.py", line 2450, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+  File "/home/dsia-st125985/.conda/envs/spinevqa/lib/python3.10/site-packages/transformers/models/siglip/tokenization_siglip.py", line 123, in __init__
+    self.sp_model = self.get_spm_processor()
+  File "/home/dsia-st125985/.conda/envs/spinevqa/lib/python3.10/site-packages/transformers/models/siglip/tokenization_siglip.py", line 139, in get_spm_processor
+    with open(self.vocab_file, "rb") as f:
+TypeError: expected str, bytes or os.PathLike object, not NoneType

@@ -1,0 +1,61 @@
+# =========================
+# Data files - do not push
+# =========================
+data/
+datasets/
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# =========================
+# Python / cache
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# =========================
+# Environment
+# =========================
+env/
+venv/
+.venv/
+.conda/
+conda/
+*.env
+
+# =========================
+# Model checkpoints - usually too large
+# =========================
+models/*.pth
+models/*.pt
+models/*.ckpt
+checkpoints/
+outputs/
+runs/
+
+# =========================
+# W&B local files
+# =========================
+wandb/
+
+# =========================
+# Logs - optional
+# If you want to push logs, comment this line.
+# =========================
+# logs/
+
+# =========================
+# System files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Hugging Face cache
+# =========================
+.cache/
+huggingface/

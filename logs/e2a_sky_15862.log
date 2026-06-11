@@ -1,0 +1,4 @@
+  File "/home/dsia-st125985/SpineVQA/scripts/E2a_newsplit.py", line 1
+    cat > ~/SpineVQA/scripts/E2a_newsplit.py << 'EOF'
+           ^
+SyntaxError: invalid syntax

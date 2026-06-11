@@ -1,0 +1,18 @@
+/var/spool/slurmd/job15784/slurm_script: line 10: conda: command not found
+/var/spool/slurmd/job15784/slurm_script: line 10: /etc/profile.d/conda.sh: No such file or directory
+/var/spool/slurmd/job15784/slurm_script: line 11: conda: command not found
+Traceback (most recent call last):
+  File "/home/dsia-st125985/SpineVQA/scripts/E1_baseline.py", line 14, in <module>
+    from transformers import AutoProcessor, AutoModel
+  File "/home/dsia-st125985/.conda/envs/spinevqa/lib/python3.10/site-packages/transformers/__init__.py", line 26, in <module>
+    from . import dependency_versions_check
+  File "/home/dsia-st125985/.conda/envs/spinevqa/lib/python3.10/site-packages/transformers/dependency_versions_check.py", line 57, in <module>
+    require_version_core(deps[pkg])
+  File "/home/dsia-st125985/.conda/envs/spinevqa/lib/python3.10/site-packages/transformers/utils/versions.py", line 117, in require_version_core
+    return require_version(requirement, hint)
+  File "/home/dsia-st125985/.conda/envs/spinevqa/lib/python3.10/site-packages/transformers/utils/versions.py", line 111, in require_version
+    _compare_versions(op, got_ver, want_ver, requirement, pkg, hint)
+  File "/home/dsia-st125985/.conda/envs/spinevqa/lib/python3.10/site-packages/transformers/utils/versions.py", line 44, in _compare_versions
+    raise ImportError(
+ImportError: huggingface-hub>=0.23.2,<1.0 is required for a normal functioning of this module, but found huggingface-hub==1.18.0.
+Try: `pip install transformers -U` or `pip install -e '.[dev]'` if you're working with git main

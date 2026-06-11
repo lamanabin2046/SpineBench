@@ -1,0 +1,751 @@
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from WANDB_API_KEY.
+wandb: Currently logged in as: st125985 (st125985-asian-institute-of-technology) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: setting up run vm4hu445
+wandb: Tracking run with wandb version 0.27.2
+wandb: Run data is saved locally in /home/dsia-st125985/SpineVQA/wandb/run-20260610_075903-vm4hu445
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run E3a-LocalizationContrastive-NewSplit
+wandb: ⭐️ View project at https://wandb.ai/st125985-asian-institute-of-technology/SpineVQA-CL
+wandb: 🚀 View run at https://wandb.ai/st125985-asian-institute-of-technology/SpineVQA-CL/runs/vm4hu445
+================================================================================
+E3a: Localization-Aware Contrastive Learning
+Positive pair = same disease AND same spinal level pattern
+================================================================================
+Device: cuda
+
+Loading datasets...
+Train samples: 49,617
+Val samples:   12,409
+Test samples:  2,128
+
+Class counts:
+  Subarticular Stenosis              :  10914 | weight=0.017
+  Foraminal stenosis                 :   6774 | weight=0.028
+  Healthy                            :   4216 | weight=0.045
+  Osteophytes                        :   3144 | weight=0.060
+  Spinal Canal Stenosis              :   1938 | weight=0.097
+  cervical Lordosis                  :   1276 | weight=0.147
+  Straight cervical vertebrae        :   1230 | weight=0.153
+  sigmoid cervical vertebrae         :    692 | weight=0.272
+  cervical Kyphosis                  :    309 | weight=0.609
+  Disc space narrowing               :    148 | weight=1.271
+  Spondylolisthesis                  :     62 | weight=3.033
+  Vertebral collapse                 :     30 | weight=6.269
+
+Training...
+================================================================================
+Epoch |     Loss |     Task |      Con | TrainCls |   ValCls |   ValLoc | ValOverall | Save
+--------------------------------------------------------------------------------
+wandb: WARNING Fatal error while uploading data. Some run data will not be synced, but it will still be written to disk. Use `wandb sync` at the end of the run to try uploading.
+Epoch 01 | Step 0000/3102 | Loss 3.9675 | Task 3.1745 | Con 2.6435
+Epoch 01 | Step 0100/3102 | Loss 3.3401 | Task 2.6870 | Con 2.1768
+Epoch 01 | Step 0200/3102 | Loss 2.9618 | Task 2.1998 | Con 2.5402
+Epoch 01 | Step 0300/3102 | Loss 2.7515 | Task 1.6725 | Con 3.5969
+Epoch 01 | Step 0400/3102 | Loss 2.3003 | Task 1.7188 | Con 1.9383
+Epoch 01 | Step 0500/3102 | Loss 2.5125 | Task 1.8148 | Con 2.3257
+Epoch 01 | Step 0600/3102 | Loss 2.6263 | Task 1.8278 | Con 2.6618
+Epoch 01 | Step 0700/3102 | Loss 2.2556 | Task 1.4572 | Con 2.6613
+Epoch 01 | Step 0800/3102 | Loss 3.3479 | Task 2.7322 | Con 2.0524
+Epoch 01 | Step 0900/3102 | Loss 2.3364 | Task 1.3934 | Con 3.1436
+Epoch 01 | Step 1000/3102 | Loss 2.3760 | Task 1.7716 | Con 2.0146
+Epoch 01 | Step 1100/3102 | Loss 2.0127 | Task 1.4341 | Con 1.9286
+Epoch 01 | Step 1200/3102 | Loss 2.1889 | Task 1.3432 | Con 2.8191
+Epoch 01 | Step 1300/3102 | Loss 1.8207 | Task 1.2326 | Con 1.9603
+Epoch 01 | Step 1400/3102 | Loss 3.2924 | Task 2.5821 | Con 2.3678
+Epoch 01 | Step 1500/3102 | Loss 2.1055 | Task 1.4177 | Con 2.2926
+Epoch 01 | Step 1600/3102 | Loss 2.0569 | Task 1.4846 | Con 1.9077
+Epoch 01 | Step 1700/3102 | Loss 1.8162 | Task 0.9505 | Con 2.8855
+Epoch 01 | Step 1800/3102 | Loss 1.6189 | Task 0.8826 | Con 2.4544
+Epoch 01 | Step 1900/3102 | Loss 2.4480 | Task 1.4901 | Con 3.1930
+Epoch 01 | Step 2000/3102 | Loss 2.2635 | Task 1.5956 | Con 2.2264
+Epoch 01 | Step 2100/3102 | Loss 4.4082 | Task 3.7008 | Con 2.3581
+Epoch 01 | Step 2200/3102 | Loss 2.1317 | Task 1.6300 | Con 1.6726
+Epoch 01 | Step 2300/3102 | Loss 1.5552 | Task 0.9927 | Con 1.8750
+Epoch 01 | Step 2400/3102 | Loss 2.0589 | Task 1.3107 | Con 2.4941
+Epoch 01 | Step 2500/3102 | Loss 1.5522 | Task 0.8615 | Con 2.3022
+Epoch 01 | Step 2600/3102 | Loss 2.0485 | Task 1.3464 | Con 2.3404
+Epoch 01 | Step 2700/3102 | Loss 1.7064 | Task 0.9894 | Con 2.3898
+Epoch 01 | Step 2800/3102 | Loss 2.2467 | Task 1.6924 | Con 1.8475
+Epoch 01 | Step 2900/3102 | Loss 1.9912 | Task 1.2777 | Con 2.3783
+Epoch 01 | Step 3000/3102 | Loss 2.2026 | Task 1.5153 | Con 2.2913
+Epoch 01 | Step 3100/3102 | Loss 1.7790 | Task 1.1858 | Con 1.9774
+    1 |   2.4049 |   1.7437 |   2.2040 |    75.11 |    80.54 |    15.66 |      55.81 | ✓
+Epoch 02 | Step 0000/3102 | Loss 1.3894 | Task 0.8446 | Con 1.8159
+Epoch 02 | Step 0100/3102 | Loss 2.0874 | Task 1.4219 | Con 2.2183
+Epoch 02 | Step 0200/3102 | Loss 2.0563 | Task 1.2998 | Con 2.5216
+Epoch 02 | Step 0300/3102 | Loss 2.1047 | Task 1.4406 | Con 2.2136
+Epoch 02 | Step 0400/3102 | Loss 2.1069 | Task 1.4566 | Con 2.1676
+Epoch 02 | Step 0500/3102 | Loss 1.8442 | Task 1.2457 | Con 1.9948
+Epoch 02 | Step 0600/3102 | Loss 1.4873 | Task 0.8608 | Con 2.0885
+Epoch 02 | Step 0700/3102 | Loss 1.4241 | Task 0.7449 | Con 2.2643
+Epoch 02 | Step 0800/3102 | Loss 2.9346 | Task 2.4060 | Con 1.7622
+Epoch 02 | Step 0900/3102 | Loss 1.9981 | Task 1.5586 | Con 1.4649
+Epoch 02 | Step 1000/3102 | Loss 1.0276 | Task 0.4336 | Con 1.9798
+Epoch 02 | Step 1100/3102 | Loss 2.3376 | Task 1.7038 | Con 2.1126
+Epoch 02 | Step 1200/3102 | Loss 1.9393 | Task 1.3085 | Con 2.1029
+Epoch 02 | Step 1300/3102 | Loss 1.7895 | Task 1.0167 | Con 2.5759
+Epoch 02 | Step 1400/3102 | Loss 1.6190 | Task 1.0422 | Con 1.9225
+Epoch 02 | Step 1500/3102 | Loss 1.6247 | Task 1.6247 | Con 0.0000
+Epoch 02 | Step 1600/3102 | Loss 1.7915 | Task 1.2966 | Con 1.6497
+Epoch 02 | Step 1700/3102 | Loss 4.6260 | Task 4.0214 | Con 2.0156
+Epoch 02 | Step 1800/3102 | Loss 1.9785 | Task 1.2457 | Con 2.4424
+Epoch 02 | Step 1900/3102 | Loss 1.6982 | Task 1.1310 | Con 1.8906
+Epoch 02 | Step 2000/3102 | Loss 1.7698 | Task 1.0755 | Con 2.3141
+Epoch 02 | Step 2100/3102 | Loss 2.6871 | Task 2.0444 | Con 2.1423
+Epoch 02 | Step 2200/3102 | Loss 3.1074 | Task 2.3531 | Con 2.5144
+Epoch 02 | Step 2300/3102 | Loss 1.8965 | Task 1.1948 | Con 2.3388
+Epoch 02 | Step 2400/3102 | Loss 1.2984 | Task 0.7490 | Con 1.8315
+Epoch 02 | Step 2500/3102 | Loss 1.5735 | Task 1.0332 | Con 1.8010
+Epoch 02 | Step 2600/3102 | Loss 2.2654 | Task 1.5947 | Con 2.2357
+Epoch 02 | Step 2700/3102 | Loss 2.9274 | Task 2.3956 | Con 1.7727
+Epoch 02 | Step 2800/3102 | Loss 1.5913 | Task 0.9246 | Con 2.2225
+Epoch 02 | Step 2900/3102 | Loss 2.8952 | Task 2.4237 | Con 1.5719
+Epoch 02 | Step 3000/3102 | Loss 1.3166 | Task 0.5700 | Con 2.4887
+Epoch 02 | Step 3100/3102 | Loss 1.7460 | Task 1.1750 | Con 1.9031
+    2 |   2.0376 |   1.3971 |   2.1352 |    82.36 |    82.78 |    29.63 |      62.52 | ✓
+Epoch 03 | Step 0000/3102 | Loss 1.2266 | Task 0.5536 | Con 2.2434
+Epoch 03 | Step 0100/3102 | Loss 1.3294 | Task 0.7043 | Con 2.0836
+Epoch 03 | Step 0200/3102 | Loss 1.7108 | Task 1.1937 | Con 1.7236
+Epoch 03 | Step 0300/3102 | Loss 1.2719 | Task 0.7302 | Con 1.8057
+Epoch 03 | Step 0400/3102 | Loss 2.6514 | Task 2.0787 | Con 1.9090
+Epoch 03 | Step 0500/3102 | Loss 1.8462 | Task 1.0796 | Con 2.5552
+Epoch 03 | Step 0600/3102 | Loss 0.9953 | Task 0.4653 | Con 1.7668
+Epoch 03 | Step 0700/3102 | Loss 2.7805 | Task 2.1466 | Con 2.1131
+Epoch 03 | Step 0800/3102 | Loss 1.8068 | Task 1.1371 | Con 2.2322
+Epoch 03 | Step 0900/3102 | Loss 1.7905 | Task 1.0827 | Con 2.3590
+Epoch 03 | Step 1000/3102 | Loss 2.3186 | Task 1.7337 | Con 1.9494
+Epoch 03 | Step 1100/3102 | Loss 1.5595 | Task 1.0545 | Con 1.6832
+Epoch 03 | Step 1200/3102 | Loss 1.7225 | Task 1.1097 | Con 2.0427
+Epoch 03 | Step 1300/3102 | Loss 2.3502 | Task 1.4142 | Con 3.1200
+Epoch 03 | Step 1400/3102 | Loss 2.0164 | Task 1.4547 | Con 1.8723
+Epoch 03 | Step 1500/3102 | Loss 2.0453 | Task 1.4921 | Con 1.8440
+Epoch 03 | Step 1600/3102 | Loss 3.7530 | Task 3.0941 | Con 2.1963
+Epoch 03 | Step 1700/3102 | Loss 2.0183 | Task 1.4450 | Con 1.9110
+Epoch 03 | Step 1800/3102 | Loss 2.1825 | Task 1.6107 | Con 1.9057
+Epoch 03 | Step 1900/3102 | Loss 1.9830 | Task 1.2275 | Con 2.5184
+Epoch 03 | Step 2000/3102 | Loss 1.4899 | Task 0.7508 | Con 2.4637
+Epoch 03 | Step 2100/3102 | Loss 2.0694 | Task 1.2075 | Con 2.8729
+Epoch 03 | Step 2200/3102 | Loss 2.0982 | Task 1.4825 | Con 2.0526
+Epoch 03 | Step 2300/3102 | Loss 1.7059 | Task 0.9480 | Con 2.5266
+Epoch 03 | Step 2400/3102 | Loss 1.7094 | Task 1.0925 | Con 2.0563
+Epoch 03 | Step 2500/3102 | Loss 1.5087 | Task 0.8934 | Con 2.0507
+Epoch 03 | Step 2600/3102 | Loss 1.5071 | Task 0.9507 | Con 1.8544
+Epoch 03 | Step 2700/3102 | Loss 1.2547 | Task 0.4954 | Con 2.5311
+Epoch 03 | Step 2800/3102 | Loss 1.8318 | Task 0.6028 | Con 4.0966
+Epoch 03 | Step 2900/3102 | Loss 3.4623 | Task 2.1553 | Con 4.3568
+Epoch 03 | Step 3000/3102 | Loss 1.9057 | Task 1.1975 | Con 2.3606
+Epoch 03 | Step 3100/3102 | Loss 1.4604 | Task 0.8921 | Con 1.8941
+    3 |   1.9587 |   1.3242 |   2.1150 |    83.35 |    85.11 |    35.09 |      66.04 | ✓
+Epoch 04 | Step 0000/3102 | Loss 2.5673 | Task 1.8302 | Con 2.4570
+Epoch 04 | Step 0100/3102 | Loss 4.3928 | Task 3.6723 | Con 2.4017
+Epoch 04 | Step 0200/3102 | Loss 1.4021 | Task 1.0294 | Con 1.2423
+Epoch 04 | Step 0300/3102 | Loss 1.8289 | Task 1.0159 | Con 2.7101
+Epoch 04 | Step 0400/3102 | Loss 1.5957 | Task 0.9465 | Con 2.1639
+Epoch 04 | Step 0500/3102 | Loss 1.2356 | Task 0.6405 | Con 1.9837
+Epoch 04 | Step 0600/3102 | Loss 1.3242 | Task 0.4955 | Con 2.7621
+Epoch 04 | Step 0700/3102 | Loss 1.4578 | Task 0.9271 | Con 1.7692
+Epoch 04 | Step 0800/3102 | Loss 1.6082 | Task 0.9978 | Con 2.0347
+Epoch 04 | Step 0900/3102 | Loss 1.6865 | Task 1.0296 | Con 2.1897
+Epoch 04 | Step 1000/3102 | Loss 1.5243 | Task 0.7694 | Con 2.5162
+Epoch 04 | Step 1100/3102 | Loss 2.5952 | Task 1.9580 | Con 2.1239
+Epoch 04 | Step 1200/3102 | Loss 2.0747 | Task 1.3761 | Con 2.3285
+Epoch 04 | Step 1300/3102 | Loss 1.2335 | Task 0.4573 | Con 2.5871
+Epoch 04 | Step 1400/3102 | Loss 1.8372 | Task 1.2542 | Con 1.9433
+Epoch 04 | Step 1500/3102 | Loss 1.6101 | Task 0.7837 | Con 2.7547
+Epoch 04 | Step 1600/3102 | Loss 2.1384 | Task 1.3794 | Con 2.5300
+Epoch 04 | Step 1700/3102 | Loss 1.7501 | Task 0.9901 | Con 2.5331
+Epoch 04 | Step 1800/3102 | Loss 2.1892 | Task 1.6993 | Con 1.6330
+Epoch 04 | Step 1900/3102 | Loss 2.0341 | Task 1.4944 | Con 1.7991
+Epoch 04 | Step 2000/3102 | Loss 2.0107 | Task 1.4789 | Con 1.7729
+Epoch 04 | Step 2100/3102 | Loss 2.9395 | Task 2.1429 | Con 2.6556
+Epoch 04 | Step 2200/3102 | Loss 1.5398 | Task 0.9139 | Con 2.0864
+Epoch 04 | Step 2300/3102 | Loss 2.4085 | Task 1.5643 | Con 2.8140
+Epoch 04 | Step 2400/3102 | Loss 1.6919 | Task 0.9508 | Con 2.4703
+Epoch 04 | Step 2500/3102 | Loss 1.2720 | Task 0.6456 | Con 2.0882
+Epoch 04 | Step 2600/3102 | Loss 1.4754 | Task 0.8965 | Con 1.9298
+Epoch 04 | Step 2700/3102 | Loss 1.9878 | Task 1.3278 | Con 2.1998
+Epoch 04 | Step 2800/3102 | Loss 2.0909 | Task 1.4942 | Con 1.9889
+Epoch 04 | Step 2900/3102 | Loss 1.5057 | Task 1.1869 | Con 1.0627
+Epoch 04 | Step 3000/3102 | Loss 1.4311 | Task 0.8670 | Con 1.8802
+Epoch 04 | Step 3100/3102 | Loss 0.9839 | Task 0.4068 | Con 1.9235
+    4 |   1.8963 |   1.2663 |   2.1000 |    84.02 |    84.32 |    43.80 |      68.87 | ✓
+Epoch 05 | Step 0000/3102 | Loss 2.5313 | Task 1.9602 | Con 1.9036
+Epoch 05 | Step 0100/3102 | Loss 1.3395 | Task 0.6987 | Con 2.1360
+Epoch 05 | Step 0200/3102 | Loss 1.2077 | Task 0.7795 | Con 1.4275
+Epoch 05 | Step 0300/3102 | Loss 1.3874 | Task 0.6483 | Con 2.4636
+Epoch 05 | Step 0400/3102 | Loss 2.3076 | Task 1.7425 | Con 1.8836
+Epoch 05 | Step 0500/3102 | Loss 1.3007 | Task 0.5292 | Con 2.5718
+Epoch 05 | Step 0600/3102 | Loss 1.3227 | Task 0.8212 | Con 1.6715
+Epoch 05 | Step 0700/3102 | Loss 1.9673 | Task 0.9826 | Con 3.2822
+Epoch 05 | Step 0800/3102 | Loss 1.2477 | Task 0.8225 | Con 1.4175
+Epoch 05 | Step 0900/3102 | Loss 2.7033 | Task 2.1424 | Con 1.8695
+Epoch 05 | Step 1000/3102 | Loss 1.3719 | Task 0.5943 | Con 2.5922
+Epoch 05 | Step 1100/3102 | Loss 1.4250 | Task 0.9204 | Con 1.6819
+Epoch 05 | Step 1200/3102 | Loss 1.7374 | Task 1.2416 | Con 1.6529
+Epoch 05 | Step 1300/3102 | Loss 1.1859 | Task 0.6422 | Con 1.8124
+Epoch 05 | Step 1400/3102 | Loss 1.6570 | Task 1.1471 | Con 1.6998
+Epoch 05 | Step 1500/3102 | Loss 2.0050 | Task 1.2353 | Con 2.5657
+Epoch 05 | Step 1600/3102 | Loss 1.3154 | Task 0.6753 | Con 2.1335
+Epoch 05 | Step 1700/3102 | Loss 1.7902 | Task 0.9460 | Con 2.8140
+Epoch 05 | Step 1800/3102 | Loss 4.0863 | Task 3.3479 | Con 2.4613
+Epoch 05 | Step 1900/3102 | Loss 1.4477 | Task 0.9634 | Con 1.6142
+Epoch 05 | Step 2000/3102 | Loss 1.9635 | Task 1.0716 | Con 2.9728
+Epoch 05 | Step 2100/3102 | Loss 1.1063 | Task 0.3536 | Con 2.5088
+Epoch 05 | Step 2200/3102 | Loss 1.9174 | Task 1.2947 | Con 2.0755
+Epoch 05 | Step 2300/3102 | Loss 0.9992 | Task 0.9992 | Con 0.0000
+Epoch 05 | Step 2400/3102 | Loss 1.2923 | Task 0.5434 | Con 2.4964
+Epoch 05 | Step 2500/3102 | Loss 3.4012 | Task 2.7303 | Con 2.2365
+Epoch 05 | Step 2600/3102 | Loss 1.1630 | Task 0.5501 | Con 2.0431
+Epoch 05 | Step 2700/3102 | Loss 1.5353 | Task 1.0437 | Con 1.6386
+Epoch 05 | Step 2800/3102 | Loss 2.4973 | Task 1.3470 | Con 3.8343
+Epoch 05 | Step 2900/3102 | Loss 1.9771 | Task 1.2523 | Con 2.4160
+Epoch 05 | Step 3000/3102 | Loss 1.8276 | Task 1.8276 | Con 0.0000
+Epoch 05 | Step 3100/3102 | Loss 1.7255 | Task 0.8320 | Con 2.9783
+    5 |   1.8671 |   1.2352 |   2.1063 |    84.23 |    85.44 |    45.83 |      70.34 | ✓
+Epoch 06 | Step 0000/3102 | Loss 1.1212 | Task 0.4703 | Con 2.1697
+Epoch 06 | Step 0100/3102 | Loss 1.3087 | Task 0.8587 | Con 1.5002
+Epoch 06 | Step 0200/3102 | Loss 0.8787 | Task 0.8787 | Con 0.0000
+Epoch 06 | Step 0300/3102 | Loss 1.4195 | Task 0.8352 | Con 1.9476
+Epoch 06 | Step 0400/3102 | Loss 0.9146 | Task 0.9146 | Con 0.0000
+Epoch 06 | Step 0500/3102 | Loss 1.7765 | Task 0.9083 | Con 2.8938
+Epoch 06 | Step 0600/3102 | Loss 1.7232 | Task 1.1727 | Con 1.8350
+Epoch 06 | Step 0700/3102 | Loss 1.7392 | Task 1.1413 | Con 1.9929
+Epoch 06 | Step 0800/3102 | Loss 1.3339 | Task 0.7533 | Con 1.9354
+Epoch 06 | Step 0900/3102 | Loss 1.9110 | Task 0.9227 | Con 3.2943
+Epoch 06 | Step 1000/3102 | Loss 1.6069 | Task 0.9665 | Con 2.1348
+Epoch 06 | Step 1100/3102 | Loss 1.8045 | Task 1.2337 | Con 1.9026
+Epoch 06 | Step 1200/3102 | Loss 1.3414 | Task 0.7897 | Con 1.8392
+Epoch 06 | Step 1300/3102 | Loss 1.3796 | Task 0.6300 | Con 2.4988
+Epoch 06 | Step 1400/3102 | Loss 1.8101 | Task 1.2780 | Con 1.7737
+Epoch 06 | Step 1500/3102 | Loss 1.6472 | Task 0.9057 | Con 2.4717
+Epoch 06 | Step 1600/3102 | Loss 0.9193 | Task 0.3357 | Con 1.9453
+Epoch 06 | Step 1700/3102 | Loss 1.3337 | Task 0.8078 | Con 1.7531
+Epoch 06 | Step 1800/3102 | Loss 1.6418 | Task 1.0673 | Con 1.9147
+Epoch 06 | Step 1900/3102 | Loss 1.9615 | Task 1.4322 | Con 1.7644
+Epoch 06 | Step 2000/3102 | Loss 2.7194 | Task 1.7371 | Con 3.2743
+Epoch 06 | Step 2100/3102 | Loss 1.3762 | Task 0.9691 | Con 1.3569
+Epoch 06 | Step 2200/3102 | Loss 2.6547 | Task 1.7315 | Con 3.0776
+Epoch 06 | Step 2300/3102 | Loss 2.5913 | Task 2.1786 | Con 1.3757
+Epoch 06 | Step 2400/3102 | Loss 1.0904 | Task 0.5555 | Con 1.7831
+Epoch 06 | Step 2500/3102 | Loss 3.5512 | Task 2.9940 | Con 1.8573
+Epoch 06 | Step 2600/3102 | Loss 2.8916 | Task 2.0832 | Con 2.6946
+Epoch 06 | Step 2700/3102 | Loss 1.2511 | Task 0.6193 | Con 2.1060
+Epoch 06 | Step 2800/3102 | Loss 1.8109 | Task 1.2448 | Con 1.8870
+Epoch 06 | Step 2900/3102 | Loss 2.3051 | Task 1.5539 | Con 2.5042
+Epoch 06 | Step 3000/3102 | Loss 2.3048 | Task 1.5305 | Con 2.5811
+Epoch 06 | Step 3100/3102 | Loss 3.6534 | Task 3.0892 | Con 1.8807
+    6 |   1.8266 |   1.1992 |   2.0913 |    84.78 |    85.52 |    49.14 |      71.65 | ✓
+Epoch 07 | Step 0000/3102 | Loss 1.3158 | Task 0.8802 | Con 1.4518
+Epoch 07 | Step 0100/3102 | Loss 1.7865 | Task 0.8762 | Con 3.0345
+Epoch 07 | Step 0200/3102 | Loss 1.0902 | Task 0.4912 | Con 1.9965
+Epoch 07 | Step 0300/3102 | Loss 1.3846 | Task 0.7370 | Con 2.1584
+Epoch 07 | Step 0400/3102 | Loss 3.0374 | Task 2.3330 | Con 2.3479
+Epoch 07 | Step 0500/3102 | Loss 1.9667 | Task 1.5198 | Con 1.4896
+Epoch 07 | Step 0600/3102 | Loss 2.1518 | Task 1.5218 | Con 2.0997
+Epoch 07 | Step 0700/3102 | Loss 3.7244 | Task 2.8376 | Con 2.9560
+Epoch 07 | Step 0800/3102 | Loss 3.9447 | Task 3.3330 | Con 2.0390
+Epoch 07 | Step 0900/3102 | Loss 1.4126 | Task 0.9342 | Con 1.5946
+Epoch 07 | Step 1000/3102 | Loss 1.2069 | Task 0.5886 | Con 2.0609
+Epoch 07 | Step 1100/3102 | Loss 1.8318 | Task 1.1636 | Con 2.2273
+Epoch 07 | Step 1200/3102 | Loss 1.3531 | Task 0.4292 | Con 3.0798
+Epoch 07 | Step 1300/3102 | Loss 1.4706 | Task 0.5550 | Con 3.0520
+Epoch 07 | Step 1400/3102 | Loss 1.8111 | Task 1.2199 | Con 1.9707
+Epoch 07 | Step 1500/3102 | Loss 1.0813 | Task 0.2990 | Con 2.6077
+Epoch 07 | Step 1600/3102 | Loss 1.5672 | Task 1.0138 | Con 1.8449
+Epoch 07 | Step 1700/3102 | Loss 1.8354 | Task 1.3021 | Con 1.7775
+Epoch 07 | Step 1800/3102 | Loss 1.5388 | Task 1.2411 | Con 0.9924
+Epoch 07 | Step 1900/3102 | Loss 1.4643 | Task 0.5484 | Con 3.0530
+Epoch 07 | Step 2000/3102 | Loss 1.7404 | Task 0.9054 | Con 2.7833
+Epoch 07 | Step 2100/3102 | Loss 1.8514 | Task 1.3500 | Con 1.6713
+Epoch 07 | Step 2200/3102 | Loss 2.0975 | Task 1.4600 | Con 2.1251
+Epoch 07 | Step 2300/3102 | Loss 0.8560 | Task 0.3512 | Con 1.6825
+Epoch 07 | Step 2400/3102 | Loss 1.3095 | Task 0.6718 | Con 2.1257
+Epoch 07 | Step 2500/3102 | Loss 2.0582 | Task 1.4248 | Con 2.1113
+Epoch 07 | Step 2600/3102 | Loss 4.6438 | Task 3.9698 | Con 2.2466
+Epoch 07 | Step 2700/3102 | Loss 1.6180 | Task 0.7694 | Con 2.8284
+Epoch 07 | Step 2800/3102 | Loss 2.0286 | Task 1.3874 | Con 2.1373
+Epoch 07 | Step 2900/3102 | Loss 1.2801 | Task 0.6561 | Con 2.0799
+Epoch 07 | Step 3000/3102 | Loss 1.7729 | Task 1.1640 | Con 2.0296
+Epoch 07 | Step 3100/3102 | Loss 1.1761 | Task 0.5527 | Con 2.0781
+    7 |   1.8079 |   1.1828 |   2.0839 |    85.15 |    84.77 |    51.11 |      71.94 | ✓
+Epoch 08 | Step 0000/3102 | Loss 2.1492 | Task 1.4520 | Con 2.3237
+Epoch 08 | Step 0100/3102 | Loss 1.9221 | Task 1.2173 | Con 2.3492
+Epoch 08 | Step 0200/3102 | Loss 1.1972 | Task 0.4938 | Con 2.3446
+Epoch 08 | Step 0300/3102 | Loss 1.1144 | Task 0.5233 | Con 1.9703
+Epoch 08 | Step 0400/3102 | Loss 1.5543 | Task 1.0004 | Con 1.8466
+Epoch 08 | Step 0500/3102 | Loss 2.2812 | Task 1.8146 | Con 1.5552
+Epoch 08 | Step 0600/3102 | Loss 1.5640 | Task 0.9466 | Con 2.0579
+Epoch 08 | Step 0700/3102 | Loss 1.9599 | Task 1.2961 | Con 2.2128
+Epoch 08 | Step 0800/3102 | Loss 1.5144 | Task 0.7900 | Con 2.4145
+Epoch 08 | Step 0900/3102 | Loss 1.7376 | Task 1.0491 | Con 2.2949
+Epoch 08 | Step 1000/3102 | Loss 1.4011 | Task 0.7811 | Con 2.0664
+Epoch 08 | Step 1100/3102 | Loss 1.5735 | Task 1.0165 | Con 1.8566
+Epoch 08 | Step 1200/3102 | Loss 1.3421 | Task 0.8355 | Con 1.6887
+Epoch 08 | Step 1300/3102 | Loss 1.6909 | Task 1.0860 | Con 2.0164
+Epoch 08 | Step 1400/3102 | Loss 1.8858 | Task 1.3721 | Con 1.7123
+Epoch 08 | Step 1500/3102 | Loss 4.2449 | Task 3.7796 | Con 1.5509
+Epoch 08 | Step 1600/3102 | Loss 1.7003 | Task 1.0551 | Con 2.1508
+Epoch 08 | Step 1700/3102 | Loss 2.3899 | Task 1.7753 | Con 2.0485
+Epoch 08 | Step 1800/3102 | Loss 2.3387 | Task 1.5776 | Con 2.5371
+Epoch 08 | Step 1900/3102 | Loss 1.6136 | Task 0.8092 | Con 2.6812
+Epoch 08 | Step 2000/3102 | Loss 1.8158 | Task 1.3589 | Con 1.5228
+Epoch 08 | Step 2100/3102 | Loss 2.4894 | Task 2.0793 | Con 1.3671
+Epoch 08 | Step 2200/3102 | Loss 2.1540 | Task 1.5075 | Con 2.1549
+Epoch 08 | Step 2300/3102 | Loss 1.7361 | Task 1.0657 | Con 2.2345
+Epoch 08 | Step 2400/3102 | Loss 1.4519 | Task 0.8082 | Con 2.1458
+Epoch 08 | Step 2500/3102 | Loss 1.6721 | Task 0.9353 | Con 2.4558
+Epoch 08 | Step 2600/3102 | Loss 1.2128 | Task 0.4139 | Con 2.6629
+Epoch 08 | Step 2700/3102 | Loss 1.4693 | Task 0.9258 | Con 1.8117
+Epoch 08 | Step 2800/3102 | Loss 1.4011 | Task 0.8763 | Con 1.7491
+Epoch 08 | Step 2900/3102 | Loss 1.6277 | Task 1.0153 | Con 2.0412
+Epoch 08 | Step 3000/3102 | Loss 1.6161 | Task 0.9866 | Con 2.0981
+Epoch 08 | Step 3100/3102 | Loss 2.2329 | Task 1.5374 | Con 2.3182
+    8 |   1.7944 |   1.1646 |   2.0995 |    85.44 |    85.86 |    52.59 |      73.17 | ✓
+Epoch 09 | Step 0000/3102 | Loss 1.8703 | Task 1.2074 | Con 2.2097
+Epoch 09 | Step 0100/3102 | Loss 0.9653 | Task 0.3799 | Con 1.9515
+Epoch 09 | Step 0200/3102 | Loss 1.5580 | Task 1.0346 | Con 1.7448
+Epoch 09 | Step 0300/3102 | Loss 2.7232 | Task 2.0781 | Con 2.1502
+Epoch 09 | Step 0400/3102 | Loss 1.4692 | Task 0.7750 | Con 2.3139
+Epoch 09 | Step 0500/3102 | Loss 1.3182 | Task 0.4919 | Con 2.7542
+Epoch 09 | Step 0600/3102 | Loss 1.5574 | Task 0.9144 | Con 2.1434
+Epoch 09 | Step 0700/3102 | Loss 1.8582 | Task 1.1623 | Con 2.3199
+Epoch 09 | Step 0800/3102 | Loss 1.5218 | Task 0.9110 | Con 2.0359
+Epoch 09 | Step 0900/3102 | Loss 2.1065 | Task 1.5761 | Con 1.7680
+Epoch 09 | Step 1000/3102 | Loss 1.8310 | Task 1.1059 | Con 2.4169
+Epoch 09 | Step 1100/3102 | Loss 1.7485 | Task 1.3001 | Con 1.4947
+Epoch 09 | Step 1200/3102 | Loss 1.3792 | Task 0.6405 | Con 2.4622
+Epoch 09 | Step 1300/3102 | Loss 1.8731 | Task 1.2698 | Con 2.0112
+Epoch 09 | Step 1400/3102 | Loss 3.8970 | Task 3.2460 | Con 2.1700
+Epoch 09 | Step 1500/3102 | Loss 1.2840 | Task 0.6804 | Con 2.0120
+Epoch 09 | Step 1600/3102 | Loss 0.9405 | Task 0.3706 | Con 1.8997
+Epoch 09 | Step 1700/3102 | Loss 1.6793 | Task 1.0594 | Con 2.0663
+Epoch 09 | Step 1800/3102 | Loss 0.4658 | Task 0.4658 | Con 0.0000
+Epoch 09 | Step 1900/3102 | Loss 1.4473 | Task 0.8488 | Con 1.9949
+Epoch 09 | Step 2000/3102 | Loss 1.4581 | Task 0.7639 | Con 2.3139
+Epoch 09 | Step 2100/3102 | Loss 2.0886 | Task 1.1649 | Con 3.0791
+Epoch 09 | Step 2200/3102 | Loss 1.8147 | Task 1.0639 | Con 2.5025
+Epoch 09 | Step 2300/3102 | Loss 1.3949 | Task 0.8962 | Con 1.6624
+Epoch 09 | Step 2400/3102 | Loss 1.2859 | Task 0.7455 | Con 1.8014
+Epoch 09 | Step 2500/3102 | Loss 1.0878 | Task 0.4853 | Con 2.0084
+Epoch 09 | Step 2600/3102 | Loss 1.2278 | Task 0.6197 | Con 2.0273
+Epoch 09 | Step 2700/3102 | Loss 1.5347 | Task 0.9850 | Con 1.8323
+Epoch 09 | Step 2800/3102 | Loss 1.6529 | Task 0.9788 | Con 2.2472
+Epoch 09 | Step 2900/3102 | Loss 6.4306 | Task 5.6176 | Con 2.7103
+Epoch 09 | Step 3000/3102 | Loss 1.3095 | Task 0.6384 | Con 2.2369
+Epoch 09 | Step 3100/3102 | Loss 1.6924 | Task 0.9866 | Con 2.3525
+    9 |   1.7799 |   1.1542 |   2.0859 |    85.48 |    86.18 |    54.62 |      74.15 | ✓
+Epoch 10 | Step 0000/3102 | Loss 2.1138 | Task 1.2201 | Con 2.9790
+Epoch 10 | Step 0100/3102 | Loss 2.0143 | Task 1.3180 | Con 2.3208
+Epoch 10 | Step 0200/3102 | Loss 1.8740 | Task 1.1117 | Con 2.5409
+Epoch 10 | Step 0300/3102 | Loss 1.3813 | Task 0.5344 | Con 2.8228
+Epoch 10 | Step 0400/3102 | Loss 1.3168 | Task 0.7712 | Con 1.8184
+Epoch 10 | Step 0500/3102 | Loss 0.9107 | Task 0.3442 | Con 1.8885
+Epoch 10 | Step 0600/3102 | Loss 1.6533 | Task 0.8300 | Con 2.7444
+Epoch 10 | Step 0700/3102 | Loss 2.2408 | Task 1.4750 | Con 2.5527
+Epoch 10 | Step 0800/3102 | Loss 1.5111 | Task 0.9056 | Con 2.0184
+Epoch 10 | Step 0900/3102 | Loss 1.7956 | Task 1.2512 | Con 1.8147
+Epoch 10 | Step 1000/3102 | Loss 1.4313 | Task 0.6423 | Con 2.6299
+Epoch 10 | Step 1100/3102 | Loss 1.5060 | Task 0.7743 | Con 2.4388
+Epoch 10 | Step 1200/3102 | Loss 1.3877 | Task 0.7503 | Con 2.1247
+Epoch 10 | Step 1300/3102 | Loss 3.9793 | Task 3.4641 | Con 1.7172
+Epoch 10 | Step 1400/3102 | Loss 1.8156 | Task 1.1947 | Con 2.0696
+Epoch 10 | Step 1500/3102 | Loss 1.1410 | Task 0.4568 | Con 2.2808
+Epoch 10 | Step 1600/3102 | Loss 2.5869 | Task 1.9422 | Con 2.1492
+Epoch 10 | Step 1700/3102 | Loss 3.0019 | Task 2.5425 | Con 1.5313
+Epoch 10 | Step 1800/3102 | Loss 2.6303 | Task 1.8914 | Con 2.4628
+Epoch 10 | Step 1900/3102 | Loss 1.2837 | Task 0.5483 | Con 2.4514
+Epoch 10 | Step 2000/3102 | Loss 2.4248 | Task 1.9771 | Con 1.4923
+Epoch 10 | Step 2100/3102 | Loss 1.4870 | Task 0.8669 | Con 2.0672
+Epoch 10 | Step 2200/3102 | Loss 1.6123 | Task 0.8050 | Con 2.6908
+Epoch 10 | Step 2300/3102 | Loss 1.0456 | Task 0.3633 | Con 2.2745
+Epoch 10 | Step 2400/3102 | Loss 1.1157 | Task 0.4046 | Con 2.3702
+Epoch 10 | Step 2500/3102 | Loss 1.4121 | Task 0.6393 | Con 2.5761
+Epoch 10 | Step 2600/3102 | Loss 7.8048 | Task 7.1746 | Con 2.1005
+Epoch 10 | Step 2700/3102 | Loss 2.4757 | Task 1.9091 | Con 1.8886
+Epoch 10 | Step 2800/3102 | Loss 3.9747 | Task 3.5112 | Con 1.5451
+Epoch 10 | Step 2900/3102 | Loss 1.0732 | Task 0.4949 | Con 1.9278
+Epoch 10 | Step 3000/3102 | Loss 1.2302 | Task 0.7098 | Con 1.7345
+Epoch 10 | Step 3100/3102 | Loss 1.0012 | Task 0.5981 | Con 1.3438
+   10 |   1.7657 |   1.1375 |   2.0941 |    85.74 |    86.19 |    53.58 |      73.76 | 
+Epoch 11 | Step 0000/3102 | Loss 1.8249 | Task 1.2598 | Con 1.8836
+Epoch 11 | Step 0100/3102 | Loss 2.3959 | Task 1.7959 | Con 2.0001
+Epoch 11 | Step 0200/3102 | Loss 1.6448 | Task 1.1007 | Con 1.8138
+Epoch 11 | Step 0300/3102 | Loss 1.0849 | Task 0.5906 | Con 1.6479
+Epoch 11 | Step 0400/3102 | Loss 1.9567 | Task 1.2362 | Con 2.4017
+Epoch 11 | Step 0500/3102 | Loss 1.5666 | Task 0.9746 | Con 1.9737
+Epoch 11 | Step 0600/3102 | Loss 3.7561 | Task 3.1906 | Con 1.8850
+Epoch 11 | Step 0700/3102 | Loss 1.3588 | Task 0.6789 | Con 2.2662
+Epoch 11 | Step 0800/3102 | Loss 2.5945 | Task 1.7641 | Con 2.7681
+Epoch 11 | Step 0900/3102 | Loss 1.3201 | Task 0.5902 | Con 2.4331
+Epoch 11 | Step 1000/3102 | Loss 0.9592 | Task 0.4541 | Con 1.6837
+Epoch 11 | Step 1100/3102 | Loss 1.5070 | Task 0.8847 | Con 2.0744
+Epoch 11 | Step 1200/3102 | Loss 2.3488 | Task 1.7399 | Con 2.0296
+Epoch 11 | Step 1300/3102 | Loss 1.5879 | Task 0.9831 | Con 2.0161
+Epoch 11 | Step 1400/3102 | Loss 1.9994 | Task 1.2894 | Con 2.3665
+Epoch 11 | Step 1500/3102 | Loss 1.0598 | Task 0.5786 | Con 1.6040
+Epoch 11 | Step 1600/3102 | Loss 1.7787 | Task 1.1225 | Con 2.1870
+Epoch 11 | Step 1700/3102 | Loss 1.3184 | Task 0.6696 | Con 2.1627
+Epoch 11 | Step 1800/3102 | Loss 1.5159 | Task 0.9045 | Con 2.0378
+Epoch 11 | Step 1900/3102 | Loss 1.7238 | Task 0.9378 | Con 2.6200
+Epoch 11 | Step 2000/3102 | Loss 1.2796 | Task 0.4303 | Con 2.8309
+Epoch 11 | Step 2100/3102 | Loss 1.4559 | Task 0.9465 | Con 1.6980
+Epoch 11 | Step 2200/3102 | Loss 5.7744 | Task 5.1732 | Con 2.0039
+Epoch 11 | Step 2300/3102 | Loss 2.1035 | Task 1.3837 | Con 2.3994
+Epoch 11 | Step 2400/3102 | Loss 1.1301 | Task 0.6864 | Con 1.4790
+Epoch 11 | Step 2500/3102 | Loss 0.9950 | Task 0.3522 | Con 2.1425
+Epoch 11 | Step 2600/3102 | Loss 2.1855 | Task 1.2430 | Con 3.1414
+Epoch 11 | Step 2700/3102 | Loss 0.8374 | Task 0.2072 | Con 2.1006
+Epoch 11 | Step 2800/3102 | Loss 1.1320 | Task 0.4245 | Con 2.3584
+Epoch 11 | Step 2900/3102 | Loss 1.0657 | Task 1.0657 | Con 0.0000
+Epoch 11 | Step 3000/3102 | Loss 1.1261 | Task 0.5232 | Con 2.0095
+Epoch 11 | Step 3100/3102 | Loss 1.9257 | Task 1.1204 | Con 2.6842
+   11 |   1.7584 |   1.1332 |   2.0841 |    85.73 |    86.08 |    56.10 |      74.65 | ✓
+Epoch 12 | Step 0000/3102 | Loss 1.4363 | Task 0.7275 | Con 2.3626
+Epoch 12 | Step 0100/3102 | Loss 3.6086 | Task 3.1629 | Con 1.4856
+Epoch 12 | Step 0200/3102 | Loss 2.5154 | Task 2.0230 | Con 1.6415
+Epoch 12 | Step 0300/3102 | Loss 1.5143 | Task 0.9742 | Con 1.8006
+Epoch 12 | Step 0400/3102 | Loss 1.6061 | Task 0.8966 | Con 2.3650
+Epoch 12 | Step 0500/3102 | Loss 1.1374 | Task 0.5757 | Con 1.8724
+Epoch 12 | Step 0600/3102 | Loss 1.3348 | Task 0.6394 | Con 2.3179
+Epoch 12 | Step 0700/3102 | Loss 1.1946 | Task 0.3665 | Con 2.7603
+Epoch 12 | Step 0800/3102 | Loss 3.4658 | Task 2.8734 | Con 1.9744
+Epoch 12 | Step 0900/3102 | Loss 1.3561 | Task 0.6905 | Con 2.2189
+Epoch 12 | Step 1000/3102 | Loss 1.8571 | Task 1.3717 | Con 1.6181
+Epoch 12 | Step 1100/3102 | Loss 1.8248 | Task 1.3570 | Con 1.5594
+Epoch 12 | Step 1200/3102 | Loss 1.2366 | Task 0.6999 | Con 1.7889
+Epoch 12 | Step 1300/3102 | Loss 1.0868 | Task 0.3120 | Con 2.5825
+Epoch 12 | Step 1400/3102 | Loss 1.9747 | Task 1.1392 | Con 2.7851
+Epoch 12 | Step 1500/3102 | Loss 2.7974 | Task 2.0000 | Con 2.6579
+Epoch 12 | Step 1600/3102 | Loss 1.8616 | Task 1.1961 | Con 2.2183
+Epoch 12 | Step 1700/3102 | Loss 2.3746 | Task 1.7203 | Con 2.1808
+Epoch 12 | Step 1800/3102 | Loss 1.4394 | Task 0.9521 | Con 1.6243
+Epoch 12 | Step 1900/3102 | Loss 3.6245 | Task 3.0843 | Con 1.8006
+Epoch 12 | Step 2000/3102 | Loss 1.2614 | Task 0.5851 | Con 2.2541
+Epoch 12 | Step 2100/3102 | Loss 1.4501 | Task 1.0544 | Con 1.3190
+Epoch 12 | Step 2200/3102 | Loss 1.8508 | Task 1.1844 | Con 2.2214
+Epoch 12 | Step 2300/3102 | Loss 1.1900 | Task 0.5000 | Con 2.3001
+Epoch 12 | Step 2400/3102 | Loss 1.6832 | Task 0.9245 | Con 2.5290
+Epoch 12 | Step 2500/3102 | Loss 1.6443 | Task 1.1335 | Con 1.7026
+Epoch 12 | Step 2600/3102 | Loss 1.9784 | Task 1.1857 | Con 2.6422
+Epoch 12 | Step 2700/3102 | Loss 1.4289 | Task 0.6272 | Con 2.6724
+Epoch 12 | Step 2800/3102 | Loss 1.9110 | Task 1.3517 | Con 1.8643
+Epoch 12 | Step 2900/3102 | Loss 1.6345 | Task 1.0347 | Con 1.9993
+Epoch 12 | Step 3000/3102 | Loss 1.0640 | Task 0.4736 | Con 1.9681
+Epoch 12 | Step 3100/3102 | Loss 1.4773 | Task 1.0051 | Con 1.5741
+   12 |   1.7492 |   1.1278 |   2.0711 |    86.22 |    86.13 |    55.36 |      74.40 | 
+Epoch 13 | Step 0000/3102 | Loss 2.9088 | Task 2.3587 | Con 1.8337
+Epoch 13 | Step 0100/3102 | Loss 1.1865 | Task 0.4947 | Con 2.3059
+Epoch 13 | Step 0200/3102 | Loss 1.4207 | Task 0.5403 | Con 2.9347
+Epoch 13 | Step 0300/3102 | Loss 0.9589 | Task 0.3366 | Con 2.0744
+Epoch 13 | Step 0400/3102 | Loss 2.1025 | Task 1.4559 | Con 2.1551
+Epoch 13 | Step 0500/3102 | Loss 0.9829 | Task 0.4295 | Con 1.8447
+Epoch 13 | Step 0600/3102 | Loss 1.6607 | Task 1.1607 | Con 1.6665
+Epoch 13 | Step 0700/3102 | Loss 2.6752 | Task 1.2589 | Con 4.7209
+Epoch 13 | Step 0800/3102 | Loss 1.6690 | Task 1.6690 | Con 0.0000
+Epoch 13 | Step 0900/3102 | Loss 2.0225 | Task 1.2716 | Con 2.5029
+Epoch 13 | Step 1000/3102 | Loss 1.3352 | Task 0.7729 | Con 1.8742
+Epoch 13 | Step 1100/3102 | Loss 1.3407 | Task 0.9355 | Con 1.3506
+Epoch 13 | Step 1200/3102 | Loss 1.8725 | Task 1.0036 | Con 2.8963
+Epoch 13 | Step 1300/3102 | Loss 1.5720 | Task 0.7943 | Con 2.5921
+Epoch 13 | Step 1400/3102 | Loss 2.1688 | Task 1.6856 | Con 1.6106
+Epoch 13 | Step 1500/3102 | Loss 1.0736 | Task 0.4788 | Con 1.9826
+Epoch 13 | Step 1600/3102 | Loss 1.6892 | Task 1.1653 | Con 1.7464
+Epoch 13 | Step 1700/3102 | Loss 1.2892 | Task 0.6507 | Con 2.1283
+Epoch 13 | Step 1800/3102 | Loss 1.8832 | Task 1.3282 | Con 1.8500
+Epoch 13 | Step 1900/3102 | Loss 2.6452 | Task 2.1116 | Con 1.7787
+Epoch 13 | Step 2000/3102 | Loss 1.3621 | Task 0.6414 | Con 2.4024
+Epoch 13 | Step 2100/3102 | Loss 1.1903 | Task 0.5711 | Con 2.0639
+Epoch 13 | Step 2200/3102 | Loss 1.8702 | Task 1.1216 | Con 2.4950
+Epoch 13 | Step 2300/3102 | Loss 2.2948 | Task 1.7194 | Con 1.9180
+Epoch 13 | Step 2400/3102 | Loss 2.5083 | Task 2.0593 | Con 1.4967
+Epoch 13 | Step 2500/3102 | Loss 1.7570 | Task 1.1331 | Con 2.0795
+Epoch 13 | Step 2600/3102 | Loss 4.2363 | Task 3.7569 | Con 1.5978
+Epoch 13 | Step 2700/3102 | Loss 1.5806 | Task 0.9544 | Con 2.0873
+Epoch 13 | Step 2800/3102 | Loss 1.0636 | Task 0.3478 | Con 2.3860
+Epoch 13 | Step 2900/3102 | Loss 2.1756 | Task 1.4945 | Con 2.2705
+Epoch 13 | Step 3000/3102 | Loss 1.3760 | Task 0.7613 | Con 2.0491
+Epoch 13 | Step 3100/3102 | Loss 1.9180 | Task 0.9270 | Con 3.3033
+   13 |   1.7333 |   1.1109 |   2.0748 |    86.06 |    86.18 |    55.53 |      74.49 | 
+Epoch 14 | Step 0000/3102 | Loss 1.4989 | Task 0.9152 | Con 1.9457
+Epoch 14 | Step 0100/3102 | Loss 1.8431 | Task 0.8465 | Con 3.3218
+Epoch 14 | Step 0200/3102 | Loss 1.4853 | Task 0.8010 | Con 2.2810
+Epoch 14 | Step 0300/3102 | Loss 1.3993 | Task 0.7605 | Con 2.1293
+Epoch 14 | Step 0400/3102 | Loss 2.1583 | Task 1.6422 | Con 1.7202
+Epoch 14 | Step 0500/3102 | Loss 1.6559 | Task 1.0873 | Con 1.8950
+Epoch 14 | Step 0600/3102 | Loss 2.1205 | Task 1.4630 | Con 2.1918
+Epoch 14 | Step 0700/3102 | Loss 1.2150 | Task 0.7292 | Con 1.6194
+Epoch 14 | Step 0800/3102 | Loss 2.2714 | Task 1.5129 | Con 2.5286
+Epoch 14 | Step 0900/3102 | Loss 0.9438 | Task 0.2711 | Con 2.2422
+Epoch 14 | Step 1000/3102 | Loss 1.3197 | Task 0.8157 | Con 1.6799
+Epoch 14 | Step 1100/3102 | Loss 0.8647 | Task 0.4162 | Con 1.4950
+Epoch 14 | Step 1200/3102 | Loss 0.9426 | Task 0.4278 | Con 1.7160
+Epoch 14 | Step 1300/3102 | Loss 1.3476 | Task 0.8769 | Con 1.5690
+Epoch 14 | Step 1400/3102 | Loss 1.8232 | Task 1.2289 | Con 1.9811
+Epoch 14 | Step 1500/3102 | Loss 3.2030 | Task 2.6497 | Con 1.8442
+Epoch 14 | Step 1600/3102 | Loss 1.1469 | Task 0.4473 | Con 2.3321
+Epoch 14 | Step 1700/3102 | Loss 1.3300 | Task 0.7332 | Con 1.9894
+Epoch 14 | Step 1800/3102 | Loss 1.6238 | Task 0.9332 | Con 2.3017
+Epoch 14 | Step 1900/3102 | Loss 1.8079 | Task 1.0089 | Con 2.6632
+Epoch 14 | Step 2000/3102 | Loss 1.4342 | Task 0.8836 | Con 1.8354
+Epoch 14 | Step 2100/3102 | Loss 1.6978 | Task 0.9871 | Con 2.3691
+Epoch 14 | Step 2200/3102 | Loss 1.7454 | Task 1.1231 | Con 2.0745
+Epoch 14 | Step 2300/3102 | Loss 1.1726 | Task 0.4505 | Con 2.4070
+Epoch 14 | Step 2400/3102 | Loss 2.8839 | Task 2.0733 | Con 2.7020
+Epoch 14 | Step 2500/3102 | Loss 1.5876 | Task 0.8755 | Con 2.3734
+Epoch 14 | Step 2600/3102 | Loss 1.8418 | Task 1.2795 | Con 1.8745
+Epoch 14 | Step 2700/3102 | Loss 1.1762 | Task 0.5365 | Con 2.1321
+Epoch 14 | Step 2800/3102 | Loss 1.3952 | Task 0.6609 | Con 2.4475
+Epoch 14 | Step 2900/3102 | Loss 1.4602 | Task 0.8586 | Con 2.0056
+Epoch 14 | Step 3000/3102 | Loss 1.2376 | Task 0.5867 | Con 2.1698
+Epoch 14 | Step 3100/3102 | Loss 1.9003 | Task 1.4200 | Con 1.6011
+   14 |   1.7354 |   1.1132 |   2.0740 |    86.19 |    86.30 |    54.64 |      74.23 | 
+Epoch 15 | Step 0000/3102 | Loss 1.7531 | Task 1.0279 | Con 2.4173
+Epoch 15 | Step 0100/3102 | Loss 2.4740 | Task 1.9878 | Con 1.6206
+Epoch 15 | Step 0200/3102 | Loss 5.3532 | Task 4.6095 | Con 2.4792
+Epoch 15 | Step 0300/3102 | Loss 0.9136 | Task 0.4035 | Con 1.7003
+Epoch 15 | Step 0400/3102 | Loss 4.1207 | Task 3.7231 | Con 1.3253
+Epoch 15 | Step 0500/3102 | Loss 2.0370 | Task 1.4856 | Con 1.8381
+Epoch 15 | Step 0600/3102 | Loss 1.1533 | Task 0.6451 | Con 1.6941
+Epoch 15 | Step 0700/3102 | Loss 1.3702 | Task 0.6389 | Con 2.4377
+Epoch 15 | Step 0800/3102 | Loss 1.6295 | Task 1.6295 | Con 0.0000
+Epoch 15 | Step 0900/3102 | Loss 0.9329 | Task 0.4616 | Con 1.5707
+Epoch 15 | Step 1000/3102 | Loss 1.8283 | Task 1.2968 | Con 1.7718
+Epoch 15 | Step 1100/3102 | Loss 1.5564 | Task 0.8663 | Con 2.3002
+Epoch 15 | Step 1200/3102 | Loss 1.5674 | Task 0.9073 | Con 2.2003
+Epoch 15 | Step 1300/3102 | Loss 1.4779 | Task 0.8515 | Con 2.0879
+Epoch 15 | Step 1400/3102 | Loss 1.6051 | Task 0.9878 | Con 2.0577
+Epoch 15 | Step 1500/3102 | Loss 1.2750 | Task 0.7050 | Con 1.9002
+Epoch 15 | Step 1600/3102 | Loss 1.1682 | Task 0.5106 | Con 2.1920
+Epoch 15 | Step 1700/3102 | Loss 1.3460 | Task 0.6773 | Con 2.2289
+Epoch 15 | Step 1800/3102 | Loss 1.5621 | Task 1.3419 | Con 0.7339
+Epoch 15 | Step 1900/3102 | Loss 1.5817 | Task 0.9575 | Con 2.0808
+Epoch 15 | Step 2000/3102 | Loss 1.0348 | Task 0.3797 | Con 2.1836
+Epoch 15 | Step 2100/3102 | Loss 2.1294 | Task 1.3879 | Con 2.4717
+Epoch 15 | Step 2200/3102 | Loss 1.4031 | Task 0.8156 | Con 1.9584
+Epoch 15 | Step 2300/3102 | Loss 3.2257 | Task 2.6895 | Con 1.7874
+Epoch 15 | Step 2400/3102 | Loss 1.9418 | Task 1.5006 | Con 1.4705
+Epoch 15 | Step 2500/3102 | Loss 1.0437 | Task 0.4045 | Con 2.1306
+Epoch 15 | Step 2600/3102 | Loss 1.5496 | Task 0.9006 | Con 2.1630
+Epoch 15 | Step 2700/3102 | Loss 1.4560 | Task 1.0518 | Con 1.3474
+Epoch 15 | Step 2800/3102 | Loss 1.9321 | Task 1.1832 | Con 2.4964
+Epoch 15 | Step 2900/3102 | Loss 3.8637 | Task 3.2029 | Con 2.2028
+Epoch 15 | Step 3000/3102 | Loss 1.3075 | Task 0.6738 | Con 2.1122
+Epoch 15 | Step 3100/3102 | Loss 0.9086 | Task 0.4029 | Con 1.6857
+   15 |   1.7290 |   1.1070 |   2.0733 |    86.25 |    87.03 |    57.07 |      75.61 | ✓
+Epoch 16 | Step 0000/3102 | Loss 1.3604 | Task 0.9545 | Con 1.3532
+Epoch 16 | Step 0100/3102 | Loss 0.8117 | Task 0.2257 | Con 1.9533
+Epoch 16 | Step 0200/3102 | Loss 2.6104 | Task 1.8679 | Con 2.4751
+Epoch 16 | Step 0300/3102 | Loss 1.2727 | Task 0.7988 | Con 1.5798
+Epoch 16 | Step 0400/3102 | Loss 0.8160 | Task 0.8160 | Con 0.0000
+Epoch 16 | Step 0500/3102 | Loss 2.0729 | Task 1.5464 | Con 1.7549
+Epoch 16 | Step 0600/3102 | Loss 2.4360 | Task 1.8653 | Con 1.9023
+Epoch 16 | Step 0700/3102 | Loss 1.6931 | Task 0.9769 | Con 2.3873
+Epoch 16 | Step 0800/3102 | Loss 1.4076 | Task 0.8449 | Con 1.8759
+Epoch 16 | Step 0900/3102 | Loss 3.3366 | Task 2.9578 | Con 1.2627
+Epoch 16 | Step 1000/3102 | Loss 2.5304 | Task 1.9027 | Con 2.0922
+Epoch 16 | Step 1100/3102 | Loss 1.1094 | Task 0.5237 | Con 1.9523
+Epoch 16 | Step 1200/3102 | Loss 1.5704 | Task 0.9674 | Con 2.0100
+Epoch 16 | Step 1300/3102 | Loss 1.6210 | Task 1.0995 | Con 1.7384
+Epoch 16 | Step 1400/3102 | Loss 2.4275 | Task 1.9300 | Con 1.6581
+Epoch 16 | Step 1500/3102 | Loss 1.6475 | Task 0.9797 | Con 2.2259
+Epoch 16 | Step 1600/3102 | Loss 1.0334 | Task 0.4669 | Con 1.8882
+Epoch 16 | Step 1700/3102 | Loss 1.3494 | Task 0.6419 | Con 2.3581
+Epoch 16 | Step 1800/3102 | Loss 1.9282 | Task 1.2455 | Con 2.2758
+Epoch 16 | Step 1900/3102 | Loss 1.8430 | Task 1.1920 | Con 2.1703
+Epoch 16 | Step 2000/3102 | Loss 1.5532 | Task 0.8238 | Con 2.4313
+Epoch 16 | Step 2100/3102 | Loss 1.0413 | Task 0.3595 | Con 2.2726
+Epoch 16 | Step 2200/3102 | Loss 0.8611 | Task 0.1110 | Con 2.5002
+Epoch 16 | Step 2300/3102 | Loss 2.1888 | Task 1.4922 | Con 2.3218
+Epoch 16 | Step 2400/3102 | Loss 1.0571 | Task 0.3187 | Con 2.4614
+Epoch 16 | Step 2500/3102 | Loss 1.5940 | Task 0.8942 | Con 2.3329
+Epoch 16 | Step 2600/3102 | Loss 1.2688 | Task 0.4602 | Con 2.6952
+Epoch 16 | Step 2700/3102 | Loss 1.5919 | Task 1.0256 | Con 1.8878
+Epoch 16 | Step 2800/3102 | Loss 1.3141 | Task 1.3141 | Con 0.0000
+Epoch 16 | Step 2900/3102 | Loss 1.2730 | Task 0.3454 | Con 3.0920
+Epoch 16 | Step 3000/3102 | Loss 1.9169 | Task 1.2762 | Con 2.1355
+Epoch 16 | Step 3100/3102 | Loss 1.2593 | Task 0.7663 | Con 1.6430
+   16 |   1.7189 |   1.0983 |   2.0688 |    86.36 |    86.94 |    57.01 |      75.53 | 
+Epoch 17 | Step 0000/3102 | Loss 1.4440 | Task 0.8423 | Con 2.0059
+Epoch 17 | Step 0100/3102 | Loss 1.2202 | Task 0.6725 | Con 1.8257
+Epoch 17 | Step 0200/3102 | Loss 1.4671 | Task 1.0861 | Con 1.2702
+Epoch 17 | Step 0300/3102 | Loss 1.2412 | Task 0.6954 | Con 1.8191
+Epoch 17 | Step 0400/3102 | Loss 1.0953 | Task 0.6158 | Con 1.5983
+Epoch 17 | Step 0500/3102 | Loss 0.9667 | Task 0.1804 | Con 2.6211
+Epoch 17 | Step 0600/3102 | Loss 1.3190 | Task 0.5459 | Con 2.5772
+Epoch 17 | Step 0700/3102 | Loss 2.7493 | Task 1.9764 | Con 2.5762
+Epoch 17 | Step 0800/3102 | Loss 1.1597 | Task 0.5260 | Con 2.1121
+Epoch 17 | Step 0900/3102 | Loss 1.3340 | Task 0.7450 | Con 1.9635
+Epoch 17 | Step 1000/3102 | Loss 1.1747 | Task 0.5423 | Con 2.1079
+Epoch 17 | Step 1100/3102 | Loss 1.1172 | Task 0.5481 | Con 1.8970
+Epoch 17 | Step 1200/3102 | Loss 1.8956 | Task 1.0510 | Con 2.8151
+Epoch 17 | Step 1300/3102 | Loss 1.8999 | Task 0.9807 | Con 3.0640
+Epoch 17 | Step 1400/3102 | Loss 1.1446 | Task 0.5471 | Con 1.9914
+Epoch 17 | Step 1500/3102 | Loss 2.1786 | Task 1.6325 | Con 1.8204
+Epoch 17 | Step 1600/3102 | Loss 1.5601 | Task 0.6218 | Con 3.1277
+Epoch 17 | Step 1700/3102 | Loss 2.2881 | Task 1.6117 | Con 2.2547
+Epoch 17 | Step 1800/3102 | Loss 1.1216 | Task 0.5029 | Con 2.0622
+Epoch 17 | Step 1900/3102 | Loss 3.4110 | Task 2.5623 | Con 2.8291
+Epoch 17 | Step 2000/3102 | Loss 4.3346 | Task 3.4479 | Con 2.9556
+Epoch 17 | Step 2100/3102 | Loss 1.6551 | Task 1.0231 | Con 2.1067
+Epoch 17 | Step 2200/3102 | Loss 1.8729 | Task 1.1572 | Con 2.3856
+Epoch 17 | Step 2300/3102 | Loss 0.9141 | Task 0.2333 | Con 2.2695
+Epoch 17 | Step 2400/3102 | Loss 2.4490 | Task 1.7720 | Con 2.2567
+Epoch 17 | Step 2500/3102 | Loss 2.7750 | Task 2.1927 | Con 1.9410
+Epoch 17 | Step 2600/3102 | Loss 0.9192 | Task 0.5018 | Con 1.3913
+Epoch 17 | Step 2700/3102 | Loss 3.4698 | Task 2.5413 | Con 3.0952
+Epoch 17 | Step 2800/3102 | Loss 1.3311 | Task 0.8001 | Con 1.7700
+Epoch 17 | Step 2900/3102 | Loss 1.1215 | Task 0.4873 | Con 2.1139
+Epoch 17 | Step 3000/3102 | Loss 2.9013 | Task 2.4563 | Con 1.4834
+Epoch 17 | Step 3100/3102 | Loss 1.8385 | Task 1.1281 | Con 2.3681
+   17 |   1.7208 |   1.1021 |   2.0623 |    86.14 |    86.32 |    54.62 |      74.24 | 
+Epoch 18 | Step 0000/3102 | Loss 1.6356 | Task 1.0979 | Con 1.7924
+Epoch 18 | Step 0100/3102 | Loss 2.2782 | Task 1.6151 | Con 2.2105
+Epoch 18 | Step 0200/3102 | Loss 1.0186 | Task 0.4847 | Con 1.7798
+Epoch 18 | Step 0300/3102 | Loss 1.1068 | Task 1.1068 | Con 0.0000
+Epoch 18 | Step 0400/3102 | Loss 2.2610 | Task 1.6514 | Con 2.0320
+Epoch 18 | Step 0500/3102 | Loss 2.3109 | Task 1.7953 | Con 1.7185
+Epoch 18 | Step 0600/3102 | Loss 1.2603 | Task 0.4505 | Con 2.6993
+Epoch 18 | Step 0700/3102 | Loss 1.1775 | Task 0.3674 | Con 2.7001
+Epoch 18 | Step 0800/3102 | Loss 1.8161 | Task 1.1340 | Con 2.2737
+Epoch 18 | Step 0900/3102 | Loss 1.5632 | Task 0.9572 | Con 2.0199
+Epoch 18 | Step 1000/3102 | Loss 1.4366 | Task 0.9734 | Con 1.5439
+Epoch 18 | Step 1100/3102 | Loss 1.4897 | Task 0.7562 | Con 2.4451
+Epoch 18 | Step 1200/3102 | Loss 2.0600 | Task 1.3804 | Con 2.2653
+Epoch 18 | Step 1300/3102 | Loss 1.0733 | Task 0.8137 | Con 0.8656
+Epoch 18 | Step 1400/3102 | Loss 1.4817 | Task 0.6047 | Con 2.9231
+Epoch 18 | Step 1500/3102 | Loss 1.7525 | Task 0.9791 | Con 2.5778
+Epoch 18 | Step 1600/3102 | Loss 1.3436 | Task 0.7098 | Con 2.1126
+Epoch 18 | Step 1700/3102 | Loss 0.7481 | Task 0.2384 | Con 1.6990
+Epoch 18 | Step 1800/3102 | Loss 0.7897 | Task 0.4199 | Con 1.2326
+Epoch 18 | Step 1900/3102 | Loss 1.0229 | Task 0.5433 | Con 1.5984
+Epoch 18 | Step 2000/3102 | Loss 4.2523 | Task 3.7450 | Con 1.6912
+Epoch 18 | Step 2100/3102 | Loss 2.3788 | Task 1.6433 | Con 2.4516
+Epoch 18 | Step 2200/3102 | Loss 1.3034 | Task 0.6490 | Con 2.1813
+Epoch 18 | Step 2300/3102 | Loss 1.0894 | Task 0.5677 | Con 1.7388
+Epoch 18 | Step 2400/3102 | Loss 1.9441 | Task 1.2706 | Con 2.2451
+Epoch 18 | Step 2500/3102 | Loss 1.2927 | Task 0.7878 | Con 1.6829
+Epoch 18 | Step 2600/3102 | Loss 1.6182 | Task 1.0096 | Con 2.0286
+Epoch 18 | Step 2700/3102 | Loss 1.2210 | Task 0.6506 | Con 1.9016
+Epoch 18 | Step 2800/3102 | Loss 1.0948 | Task 0.5131 | Con 1.9388
+Epoch 18 | Step 2900/3102 | Loss 1.5603 | Task 0.7609 | Con 2.6645
+Epoch 18 | Step 3000/3102 | Loss 1.3987 | Task 0.7578 | Con 2.1363
+Epoch 18 | Step 3100/3102 | Loss 1.3570 | Task 0.7561 | Con 2.0028
+   18 |   1.7084 |   1.0879 |   2.0681 |    86.63 |    86.70 |    57.22 |      75.46 | 
+Epoch 19 | Step 0000/3102 | Loss 1.4115 | Task 1.0264 | Con 1.2837
+Epoch 19 | Step 0100/3102 | Loss 1.1305 | Task 0.4736 | Con 2.1898
+Epoch 19 | Step 0200/3102 | Loss 1.2371 | Task 0.7764 | Con 1.5354
+Epoch 19 | Step 0300/3102 | Loss 2.2249 | Task 1.6627 | Con 1.8743
+Epoch 19 | Step 0400/3102 | Loss 1.1065 | Task 0.4299 | Con 2.2554
+Epoch 19 | Step 0500/3102 | Loss 1.4142 | Task 0.6589 | Con 2.5174
+Epoch 19 | Step 0600/3102 | Loss 1.5255 | Task 0.9802 | Con 1.8178
+Epoch 19 | Step 0700/3102 | Loss 1.4431 | Task 0.7262 | Con 2.3898
+Epoch 19 | Step 0800/3102 | Loss 1.6532 | Task 1.3147 | Con 1.1281
+Epoch 19 | Step 0900/3102 | Loss 1.3181 | Task 0.8213 | Con 1.6559
+Epoch 19 | Step 1000/3102 | Loss 1.5282 | Task 0.9970 | Con 1.7706
+Epoch 19 | Step 1100/3102 | Loss 1.6278 | Task 1.0557 | Con 1.9069
+Epoch 19 | Step 1200/3102 | Loss 1.2171 | Task 0.6753 | Con 1.8061
+Epoch 19 | Step 1300/3102 | Loss 1.2002 | Task 0.8974 | Con 1.0095
+Epoch 19 | Step 1400/3102 | Loss 1.8630 | Task 1.2953 | Con 1.8921
+Epoch 19 | Step 1500/3102 | Loss 3.1931 | Task 2.4564 | Con 2.4555
+Epoch 19 | Step 1600/3102 | Loss 0.7316 | Task 0.7316 | Con 0.0000
+Epoch 19 | Step 1700/3102 | Loss 1.6898 | Task 1.0743 | Con 2.0517
+Epoch 19 | Step 1800/3102 | Loss 3.0179 | Task 1.9909 | Con 3.4232
+Epoch 19 | Step 1900/3102 | Loss 0.7625 | Task 0.1736 | Con 1.9628
+Epoch 19 | Step 2000/3102 | Loss 1.8725 | Task 1.1227 | Con 2.4993
+Epoch 19 | Step 2100/3102 | Loss 1.8162 | Task 1.3315 | Con 1.6156
+Epoch 19 | Step 2200/3102 | Loss 1.0338 | Task 0.5812 | Con 1.5085
+Epoch 19 | Step 2300/3102 | Loss 1.0931 | Task 0.5780 | Con 1.7169
+Epoch 19 | Step 2400/3102 | Loss 1.3165 | Task 0.5737 | Con 2.4760
+Epoch 19 | Step 2500/3102 | Loss 0.9848 | Task 0.5249 | Con 1.5332
+Epoch 19 | Step 2600/3102 | Loss 0.9798 | Task 0.4391 | Con 1.8025
+Epoch 19 | Step 2700/3102 | Loss 1.0001 | Task 0.5088 | Con 1.6378
+Epoch 19 | Step 2800/3102 | Loss 1.6117 | Task 1.0921 | Con 1.7322
+Epoch 19 | Step 2900/3102 | Loss 2.0809 | Task 1.4472 | Con 2.1123
+Epoch 19 | Step 3000/3102 | Loss 1.3158 | Task 0.7910 | Con 1.7494
+Epoch 19 | Step 3100/3102 | Loss 1.0652 | Task 0.6031 | Con 1.5406
+   19 |   1.7045 |   1.0848 |   2.0657 |    86.61 |    87.55 |    57.28 |      76.01 | ✓
+Epoch 20 | Step 0000/3102 | Loss 5.1831 | Task 4.7206 | Con 1.5418
+Epoch 20 | Step 0100/3102 | Loss 1.8682 | Task 1.1446 | Con 2.4121
+Epoch 20 | Step 0200/3102 | Loss 1.2480 | Task 0.5468 | Con 2.3373
+Epoch 20 | Step 0300/3102 | Loss 1.5962 | Task 1.0698 | Con 1.7547
+Epoch 20 | Step 0400/3102 | Loss 1.8393 | Task 1.3317 | Con 1.6920
+Epoch 20 | Step 0500/3102 | Loss 4.4200 | Task 3.7653 | Con 2.1825
+Epoch 20 | Step 0600/3102 | Loss 3.3318 | Task 2.7167 | Con 2.0503
+Epoch 20 | Step 0700/3102 | Loss 1.2908 | Task 0.6851 | Con 2.0190
+Epoch 20 | Step 0800/3102 | Loss 1.5258 | Task 0.8982 | Con 2.0920
+Epoch 20 | Step 0900/3102 | Loss 1.8083 | Task 0.9456 | Con 2.8757
+Epoch 20 | Step 1000/3102 | Loss 1.4325 | Task 0.6593 | Con 2.5774
+Epoch 20 | Step 1100/3102 | Loss 1.8478 | Task 1.2924 | Con 1.8515
+Epoch 20 | Step 1200/3102 | Loss 1.5136 | Task 0.8364 | Con 2.2574
+Epoch 20 | Step 1300/3102 | Loss 1.5648 | Task 1.0315 | Con 1.7775
+Epoch 20 | Step 1400/3102 | Loss 1.4833 | Task 0.8900 | Con 1.9779
+Epoch 20 | Step 1500/3102 | Loss 1.1362 | Task 0.6426 | Con 1.6454
+Epoch 20 | Step 1600/3102 | Loss 1.5498 | Task 0.8531 | Con 2.3224
+Epoch 20 | Step 1700/3102 | Loss 0.8915 | Task 0.3579 | Con 1.7789
+Epoch 20 | Step 1800/3102 | Loss 1.3101 | Task 0.5908 | Con 2.3978
+Epoch 20 | Step 1900/3102 | Loss 2.1015 | Task 1.4991 | Con 2.0081
+Epoch 20 | Step 2000/3102 | Loss 3.1894 | Task 2.6729 | Con 1.7216
+Epoch 20 | Step 2100/3102 | Loss 1.9386 | Task 1.2980 | Con 2.1353
+Epoch 20 | Step 2200/3102 | Loss 1.3513 | Task 0.6868 | Con 2.2151
+Epoch 20 | Step 2300/3102 | Loss 2.0118 | Task 1.2554 | Con 2.5213
+Epoch 20 | Step 2400/3102 | Loss 0.9728 | Task 0.9728 | Con 0.0000
+Epoch 20 | Step 2500/3102 | Loss 2.4508 | Task 1.7536 | Con 2.3240
+Epoch 20 | Step 2600/3102 | Loss 2.2324 | Task 1.6854 | Con 1.8232
+Epoch 20 | Step 2700/3102 | Loss 1.4471 | Task 0.8570 | Con 1.9671
+Epoch 20 | Step 2800/3102 | Loss 2.2929 | Task 1.5318 | Con 2.5372
+Epoch 20 | Step 2900/3102 | Loss 0.6971 | Task 0.1918 | Con 1.6840
+Epoch 20 | Step 3000/3102 | Loss 0.9789 | Task 0.2822 | Con 2.3222
+Epoch 20 | Step 3100/3102 | Loss 1.1130 | Task 0.7340 | Con 1.2632
+   20 |   1.7080 |   1.0853 |   2.0758 |    86.54 |    87.37 |    58.78 |      76.47 | ✓
+================================================================================
+
+Best Val Overall: 76.47%
+Best Epoch: 20
+Best checkpoint: /home/dsia-st125985/SpineVQA/models/E3a_best.pth
+
+FINAL TEST EVALUATION
+Loading best validation checkpoint...
+wandb: updating run metadata
+wandb: 
+wandb: Run history:
+wandb:             best_epoch ▁
+wandb:       best_val_overall ▁
+wandb:                  epoch ▁▁▂▂▂▃▃▄▄▄▅▅▅▆▆▇▇▇██
+wandb:           test_cls_acc ▁
+wandb:     test_loc_exact_acc ▁
+wandb:       test_overall_acc ▁
+wandb:         test_precision ▁
+wandb:            test_recall ▁
+wandb:          train_cls_acc ▁▅▆▆▇▇▇▇▇▇▇█████████
+wandb: train_contrastive_loss █▅▄▃▃▂▂▃▂▃▂▁▂▂▂▁▁▁▁▂
+wandb:                     +7 ...
+wandb: 
+wandb: Run summary:
+wandb:             best_epoch 20
+wandb:       best_val_overall 76.46869
+wandb:                  epoch 20
+wandb:           test_cls_acc 56.02837
+wandb:     test_loc_exact_acc 49.1
+wandb:       test_overall_acc 52.77256
+wandb:         test_precision 66.92
+wandb:            test_recall 73.03667
+wandb:          train_cls_acc 86.53565
+wandb: train_contrastive_loss 2.07584
+wandb:                     +7 ...
+wandb: 
+wandb: 🚀 View run E3a-LocalizationContrastive-NewSplit at: https://wandb.ai/st125985-asian-institute-of-technology/SpineVQA-CL/runs/vm4hu445
+wandb: ⭐️ View project at: https://wandb.ai/st125985-asian-institute-of-technology/SpineVQA-CL
+wandb: Synced 2 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260610_075903-vm4hu445/logs
+
+E3a FINAL TEST RESULTS:
+  Disease Acc:  56.03%
+  Loc Acc:      49.10%
+  Precision:    66.92%
+  Recall:       73.04%
+  Overall:      52.77%
+
+Comparison:
+  E1a baseline overall: 33.27%
+  E4b current best:     58.32%
+  E3a tests whether strict disease+level contrastive loss helps.

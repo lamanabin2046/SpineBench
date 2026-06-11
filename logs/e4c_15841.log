@@ -1,0 +1,9 @@
+wandb: [wandb.login()] Loaded credentials for https://api.wandb.ai from WANDB_API_KEY.
+wandb: Currently logged in as: st125985 (st125985-asian-institute-of-technology) to https://api.wandb.ai. Use `wandb login --relogin` to force relogin
+wandb: Tracking run with wandb version 0.27.2
+wandb: Run data is saved locally in /home/dsia-st125985/SpineVQA/scripts/wandb/run-20260609_183956-nfr5jcor
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run Ablation-E4c
+wandb: ⭐️ View project at https://wandb.ai/st125985-asian-institute-of-technology/SpineVQA-CL
+wandb: 🚀 View run at https://wandb.ai/st125985-asian-institute-of-technology/SpineVQA-CL/runs/nfr5jcor
+slurmstepd-lunar: error: *** JOB 15841 ON lunar CANCELLED AT 2026-06-09T18:40:01 ***
