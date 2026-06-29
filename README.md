@@ -1,5 +1,4 @@
-# SpineVQA: Localization-Aware Multimodal Learning for Spinal Disease
-Question Answering
+# SpineVQA: Localization-Aware Multimodal Learning for Spinal Disease Question Answering
 
 This repository contains the official implementation, experimental framework, and research code developed for my Master's thesis on **Anatomy-Aware Representation Learning for Spine Visual Question Answering (SpineVQA)** using the **SpineBench** dataset.
 
