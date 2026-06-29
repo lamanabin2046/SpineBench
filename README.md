@@ -1,10 +1,11 @@
 # SpineVQA: Localization-Aware Multimodal Learning for Spinal Disease Question Answering
 
-This repository contains the official implementation, experimental framework, and research code developed for my Master's thesis on **Anatomy-Aware Representation Learning for Spine Visual Question Answering (SpineVQA)** using the **SpineBench** dataset.
+This repository contains the implementation, experimental framework, and evaluation code for **SpineVQA**, a deep learning project that investigates multimodal learning techniques for spinal disease question answering using the **SpineBench** dataset.
 
-The primary objective of this research is to develop anatomically informed multimodal learning methods that improve spinal disease diagnosis and vertebral-level lesion localization from spine X-ray images. Unlike conventional medical VQA models that rely on global visual representations, this work investigates fine-grained vertebral representation learning through patch-token modeling, anatomical attention mechanisms, contrastive representation learning, and multimodal vision-language fusion.
+The primary objective of this project is to improve spinal disease diagnosis and vertebral-level lesion localization from spine X-ray images by integrating visual and textual information through multimodal representation learning. Unlike conventional approaches that rely solely on global image representations, SpineVQA explores localization-aware learning strategies, including patch-level visual representation learning, vertebral attention mechanisms, disease-aware and localization-aware contrastive learning, hierarchical vertebral reasoning, and vision-language feature fusion.
 
-The repository provides a unified experimental framework for systematically evaluating multiple model architectures, ranging from a global multimodal baseline to anatomy-aware representation learning models, enabling comprehensive analysis of visual encoders, language encoders, contrastive objectives, and vertebral reasoning strategies for spinal medical image understanding.
+The project provides a unified and modular experimental framework for systematically evaluating multiple deep learning architectures and learning strategies. A series of experiments are conducted to analyze the impact of global visual representations, patch-token modeling, vertebral attention, contrastive learning, hierarchical evidence modeling, and different vision-language encoders on spinal medical visual question answering. The framework is designed to support reproducible experimentation and facilitate future research on medical vision-language models for spine disease understanding.
+
 
 ---
 ## Project Overview
