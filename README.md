@@ -1,4 +1,3 @@
-
 # SpineVQA: Spinal Medical Visual Question Answering on SpineBench
 
 This repository contains experimental code and logs for my thesis/project on **spinal medical visual question answering (VQA)** using the **SpineBench** dataset.
@@ -123,6 +122,7 @@ Overall test accuracy: 58.32%
 | **E6a** | E4b + PubMedBERT                        | Replaces BERT-base with PubMedBERT                                    |           113.2M |      59.57% |     53.80% |     72.53% |     78.52% |     56.86% |
 | **E7a** | HVA-Net Evidence Matrix                 | Disease-location evidence matrix `[12 × 5]`; evidence-only prediction |             6.5M |      60.20% | **54.50%** | **73.50%** | **83.34%** |     57.52% |
 | **E7b** | Hybrid HVA-Net                          | Evidence matrix + auxiliary disease/location heads                    |              ~7M |      59.93% |     52.70% |     72.98% |     79.37% |     56.53% |
+| **E8a** | E4b + CLIP ViT-B/16                     | Replaces frozen SigLIP2 with frozen CLIP ViT-B/16 visual encoder      |                 — |      57.27% |     52.70% |     71.62% |     76.59% |     55.12% |
 
 ---
 
@@ -136,11 +136,12 @@ Overall test accuracy: 58.32%
 |    4 | E5a        | E4b + Last 2 SigLIP2 Layers Fine-tuned  |     56.86% |
 |    4 | E6a        | E4b + PubMedBERT                        |     56.86% |
 |    6 | E7b        | Hybrid HVA-Net                          |     56.53% |
-|    7 | E5b        | E4b + Last 4 SigLIP2 Layers Fine-tuned  |     54.98% |
-|    8 | E3a        | Localization-Aware Contrastive Learning |     52.77% |
-|    9 | E4a        | Patch Mean Pooling                      |     44.50% |
-|   10 | E2a        | Disease Contrastive Learning            |     33.74% |
-|   11 | E1a        | Baseline CLS Fusion                     |     33.27% |
+|    7 | E8a        | E4b + CLIP ViT-B/16                     |     55.12% |
+|    8 | E5b        | E4b + Last 4 SigLIP2 Layers Fine-tuned  |     54.98% |
+|    9 | E3a        | Localization-Aware Contrastive Learning |     52.77% |
+|   10 | E4a        | Patch Mean Pooling                      |     44.50% |
+|   11 | E2a        | Disease Contrastive Learning            |     33.74% |
+|   12 | E1a        | Baseline CLS Fusion                     |     33.27% |
 
 ---
 
@@ -231,6 +232,19 @@ This suggests that naive auxiliary-head fusion may interfere with joint evidence
 
 ---
 
+### 9. SigLIP2 outperforms CLIP as the frozen visual encoder
+
+E8a replaces E4b's frozen SigLIP2 encoder with a frozen CLIP ViT-B/16 encoder, holding the vertebral-attention architecture, text encoder, and training protocol fixed:
+
+```text
+E4b (SigLIP2): 58.32%
+E8a (CLIP):    55.12%  (↓3.20)
+```
+
+The drop is broad-based rather than concentrated in one task — disease accuracy falls from 63.92% to 57.27% and precision/recall both decline modestly alongside it, while localization exact-match accuracy is essentially unchanged (52.00% vs. 52.70%). This suggests SigLIP2's pretraining (sigmoid loss, web-scale image-text pairs at higher native resolution) produces patch-level features that are a measurably better starting point for this architecture's disease reasoning specifically, while both encoders supply roughly comparable raw spatial signal for the vertebral-attention module to work with. Combined with Finding 6 (PubMedBERT does not help), this reinforces that **visual encoder choice still matters at the margin, but architectural changes (vertebral attention, evidence matrix) remain the dominant driver of performance** — encoder swaps move the needle by a few points, while the anatomical-attention mechanism itself moved it by twenty-five.
+
+---
+
 ## Current Conclusion
 
 The best model so far is:
@@ -247,7 +261,7 @@ However, E7a is also important because it is:
 * close to E4b
 * better in localization accuracy, precision, and recall
 
-Overall, the experiments suggest that **anatomical visual modeling is more important than simply fine-tuning larger encoders or replacing the text encoder**.
+Overall, the experiments suggest that **anatomical visual modeling is more important than simply fine-tuning larger encoders or replacing the text or visual encoder**.
 
 ---
 
@@ -255,7 +269,6 @@ Overall, the experiments suggest that **anatomical visual modeling is more impor
 
 | Planned Exp.                | Model                            | Purpose                                        |
 | --------------------------- | -------------------------------- | ---------------------------------------------- |
-| **E8a**                     | E4b + CLIP ViT-B/16              | Test general-domain visual encoder replacement |
 | **E8b**                     | E4b + RadDINO                    | Test radiology-pretrained visual encoder       |
 | **E8c**                     | E4b + BioMedCLIP                 | Test biomedical image-text encoder             |
 | **E9a**                     | HVA-Net + GNN                    | Model spinal levels as an anatomical graph     |
@@ -298,7 +311,14 @@ cd /home/dsia-st125985/SpineVQA
 python scripts/E4b_vertebral_attention.py
 ```
 
-For Slurm-based runs, submit the corresponding job script if available.
+CLIP visual-encoder comparison:
+
+```bash
+cd /home/dsia-st125985/SpineVQA
+python scripts/E8a_clip_e4b.py
+```
+
+For Slurm-based runs, submit the corresponding job script if available (e.g. `sbatch scripts/run_e8a.sh`).
 
 ---
 
