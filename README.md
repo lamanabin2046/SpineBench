@@ -1,11 +1,13 @@
-# SpineVQA: Spinal Medical Visual Question Answering on SpineBench
+# SpineVQA: Localization-Aware Multimodal Learning for Spinal Disease
+Question Answering
 
-This repository contains experimental code and logs for my thesis/project on **spinal medical visual question answering (VQA)** using the **SpineBench** dataset.
+This repository contains the official implementation, experimental framework, and research code developed for my Master's thesis on **Anatomy-Aware Representation Learning for Spine Visual Question Answering (SpineVQA)** using the **SpineBench** dataset.
 
-The main research goal is to improve spinal disease diagnosis and lesion localization from spine X-ray images by using anatomical visual representation learning, vertebral-level attention, contrastive learning, and disease-location reasoning.
+The primary objective of this research is to develop anatomically informed multimodal learning methods that improve spinal disease diagnosis and vertebral-level lesion localization from spine X-ray images. Unlike conventional medical VQA models that rely on global visual representations, this work investigates fine-grained vertebral representation learning through patch-token modeling, anatomical attention mechanisms, contrastive representation learning, and multimodal vision-language fusion.
+
+The repository provides a unified experimental framework for systematically evaluating multiple model architectures, ranging from a global multimodal baseline to anatomy-aware representation learning models, enabling comprehensive analysis of visual encoders, language encoders, contrastive objectives, and vertebral reasoning strategies for spinal medical image understanding.
 
 ---
-
 ## Project Overview
 
 Medical VQA for spine images requires the model to answer two major types of questions:
