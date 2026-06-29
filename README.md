@@ -278,15 +278,7 @@ Overall, the experiments suggest that **anatomical visual modeling is more impor
 | **Attention Visualization** | Vertebral attention maps         | Provide interpretability evidence              |
 | **Error Analysis**          | Per-class and per-level analysis | Identify strengths and weaknesses              |
 
----
-## W&B Report
-
-A summarized Weights & Biases report for the SpineVQA experiments is available here:
-
-[SpineVQA W&B Report](https://api.wandb.ai/links/st125985-asian-institute-of-technology/eo0j1qxq)
-
-Note: Access may depend on the W&B report/project visibility settings.
-
+--
 ## Installation
 
 Create and activate environment:
