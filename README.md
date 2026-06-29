@@ -343,6 +343,25 @@ Model checkpoints and datasets should be stored separately.
 
 ---
 
+## 📊 Weights & Biases Report
+
+All experiments were tracked using **Weights & Biases (W&B)**.
+
+The report includes:
+
+- Training and validation loss
+- Disease classification accuracy
+- Lesion localization accuracy
+- Precision, Recall, and F1-score
+- Learning rate schedules
+- Experiment comparison across all models
+
+🔗 **W&B Report**
+
+https://api.wandb.ai/links/st125985-asian-institute-of-technology/eo0j1qxq
+
+
+
 ## Author
 
 **Nabin Lama**
